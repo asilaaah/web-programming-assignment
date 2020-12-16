@@ -1,4 +1,3 @@
-<?php
 <!DOCTYPE html>
 
 <html lang = "en">
@@ -103,4 +102,3 @@ crossorigin="anonymous"></script>
 
 </body>
 </html>
-?>
