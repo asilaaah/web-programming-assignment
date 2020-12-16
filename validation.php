@@ -16,7 +16,7 @@ if($num == 1){
     header('location: level.php');
 }else{
     echo "<script type='text/javascript'>alert('Wrong Username or Password!');
-	window.location='main.html';
+	window.location='index.php';
 	</script>";
 }
 ?>
