@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$con = mysqli_connect('localhost', 'root', '');
-mysqli_select_db($con, 'mysql');
+$con = mysqli_connect('ec2-174-129-199-54.compute-1.amazonaws.com', 'kkckoswvozqflu', 'a5d495701a3ec1d185624aabd9084093c41165a950818ab406afa8f07f9876f3');
+mysqli_select_db($con, 'd1jn4cpvnijl45');
 
 $username = $_POST['username'];
 $password = $_POST['password'];
