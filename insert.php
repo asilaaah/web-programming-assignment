@@ -35,7 +35,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 			  $stmt = $conn->prepare($INSERT);
 			  $stmt->bind_param("sssis", $username, $password, $gender, $age, $email);
 			  $stmt->execute();
-			  echo header("location: main.html");
+			  echo header("location: index.php");
 			 } else {
 			  echo "Someone already register using this email";
 			 }
