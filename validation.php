@@ -1,8 +1,18 @@
 <?php
 session_start();
 
-$con = mysqli_connect('ec2-174-129-199-54.compute-1.amazonaws.com', 'kkckoswvozqflu', 'a5d495701a3ec1d185624aabd9084093c41165a950818ab406afa8f07f9876f3');
-mysqli_select_db($con, 'd1jn4cpvnijl45');
+//Get Heroku ClearDB connection information
+$cleardb_url      = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server   = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db       = substr($cleardb_url["path"],1);
+
+$active_group = 'default';
+$query_builder = TRUE;
+
+// Connect to DB
+$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
 $username = $_POST['username'];
 $password = $_POST['password'];
