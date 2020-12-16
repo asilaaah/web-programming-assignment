@@ -103,7 +103,7 @@ crossorigin="anonymous">
 	<br>
 
 	<!-- Home button -->
-	<p style="text-align: center;"><a class="btn btn-warning btn-lg" style="font-size: 21px;" role="button" href="main.html">Home</a></p>
+	<p style="text-align: center;"><a class="btn btn-warning btn-lg" style="font-size: 21px;" role="button" href="index.php">Home</a></p>
 		
 		</div>&nbsp;
 	</main>
